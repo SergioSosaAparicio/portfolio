@@ -1,0 +1,370 @@
+/* -------------- GENERAL -------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #202022e5;
+}
+
+.containers {
+    scroll-margin-top: 250px;
+    padding: 100px 20px;
+    margin: 300px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #202022e5;
+    box-shadow: 0 0 600px rgba(217, 123, 69, 0.2),
+        0 0 900px rgba(217, 123, 69, 0.1);
+}
+
+
+/* -------------- MENÚ -------------- */
+
+.main-nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000d7;
+    padding: 15px 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #D97B45;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    font-weight: 500;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.1s ease, transform 0.1s ease;
+}
+
+.nav-list li a:hover {
+    color: #D97B45;
+    transform: translateY(3px);
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 4px;
+    background: #D97B45;
+    border-radius: 20px;
+}
+
+/* -------------- SOBRE MÍ -------------- */
+
+#about {
+    margin-top: 170px;
+}
+
+.about-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.about-info {
+    flex: 1;
+    color: #fff;
+    animation: slideInLeft 1s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.greeting {
+    font-size: 40px;
+    margin-bottom: 1px;
+}
+
+.name {
+    margin-top: 1px;
+    font-size: 60px;
+    color: #D97B45;
+}
+
+.description {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.email, .phone {
+    font-size: 15px;
+    color: #D97B45;
+    text-decoration: none;
+}
+
+.phone {
+    margin-top: 20px;
+}
+
+.download-cv {
+    text-align: center;
+    margin-top: 30px;
+    width: 200px;
+    display: block;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #D97B45;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.download-cv:hover {
+    background-color: #976144;
+}
+
+.profile-down, .profile-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-photo {
+    width: 300px;
+    max-width: 80%;
+    aspect-ratio: 1/1;
+    border-radius: 10%;
+    background: url(Files/fotoPerfil1.jpg) center/cover no-repeat;
+    animation: slideInRight 1s ease-out 0.2s forwards;
+    opacity: 0;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.icon-container {
+    display: flex;
+    gap: 55px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------------- ICONOS COMUNES -------------- */
+
+.github-icon,
+.linkedin-icon,
+.gmail-icon,
+.github-icon-contact,
+.linkedin-icon-contact,
+.gmail-icon-contact {
+    cursor: pointer;
+    transition: transform 0.1s ease, background-color 0.1s ease;
+}
+
+.github-icon,
+.github-icon-contact {
+    width: 40px;
+    height: 40px;
+    background-color: #94512b;
+    mask-image: url('Files/githubIcon.svg');
+    mask-repeat: no-repeat;
+    mask-size: contain;
+}
+
+.linkedin-icon,
+.linkedin-icon-contact {
+    width: 40px;
+    height: 40px;
+    background-color: #94512b;
+    -webkit-mask-image: url('Files/linkedinIcon.svg');
+    mask-image: url('Files/linkedinIcon.svg');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+.gmail-icon,
+.gmail-icon-contact {
+    width: 40px;
+    height: 40px;
+    background-color: #94512b;
+    -webkit-mask-image: url('Files/gmailIcon.svg');
+    mask-image: url('Files/gmailIcon.svg');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+.github-icon:hover,
+.github-icon-contact:hover,
+.linkedin-icon:hover,
+.linkedin-icon-contact:hover,
+.gmail-icon:hover,
+.gmail-icon-contact:hover {
+    transform: scale(1.1);
+    background-color: #D97B45;
+}
+
+/* -------------- TECNOLOGÍAS -------------- */
+
+#tech {
+    gap: 80px;
+}
+
+.tech-image {
+    gap: 50px;
+    width: 150px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.tech-image:hover {
+    transform: scale(1.1);
+}
+
+/* -------------- PROYECTOS -------------- */
+
+.project {
+    cursor: pointer;
+    margin: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    background-size: cover;
+    background-position: center;
+}
+
+.project::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+    transition: background-color 0.1s ease;
+}
+
+.project:hover::before {
+    background-color: rgba(217, 123, 69, 0.5);
+}
+
+.project .content {
+    position: relative;
+    z-index: 1;
+}
+
+.project:hover {
+    transform: translateY(-30px);
+}
+
+.project-one {
+    background-image: url("Files/proyectoUno.jpg");
+}
+
+.project-two {
+    background-image: url("Files/proyectoDos.jpg");
+}
+
+.project-three {
+    background-image: url("Files/proyectoTres.jpg");
+}
+
+.project-four {
+    background-image: url("Files/proyectoCuatro.png");
+}
+
+.project-five {
+    background-image: url("Files/proyectoCinco.png");
+}
+
+.project-six {
+    background-image: url("Files/proyectoSeis.png");
+}
+
+/* -------------- CONTACTO -------------- */
+
+.contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 75px 50px;
+    background-color: #000000ce;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.562);
+    flex-wrap: wrap;
+}
+
+footer h2 {
+    margin-top: 0px;
+}
+
+.contact-text {
+    color: #D97B45;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-icons {
+    display: flex;
+    gap: 40px;
+}

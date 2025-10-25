@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="El portfolio de Sergio Sosa Aparicio, desarrollador web." />
+    <meta name="author" content="Sergio Sosa Aparicio" />
+    <title>Portfolio Sergio Sosa</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+</head>
+
+<body>
+
+    <!----------- Menú ----------->
+
+    <header>
+        <nav class="main-nav">
+            <div class="title">MiPortfolio</div>
+            <div class="menu-toggle" onclick="document.querySelector('.main-nav').classList.toggle('open')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#tech">Tecnologías</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!----------- Sobre mí ----------->
+    <main>
+        <section class="containers" id="about">
+            <div class="about-profile">
+                <div class="about-info">
+                    <div class="profile-up">
+                        <figure class="profile-photo" role="img" aria-label="Foto de Sergio Sosa"></figure>
+                        <div class="icon-container">
+                            <a href="https://github.com/SergioSosaAparicio" target="_blank" rel="noopener noreferrer"
+                                aria-label="GitHub">
+                                <div class="github-icon"></div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/sergio-sosa-aparicio-741583238/" target="_blank"
+                                rel="noopener noreferrer" aria-label="LinkedIn">
+                                <div class="linkedin-icon"></div>
+                            </a>
+                            <a href="mailto:sosaapariciosergio@gmail.com" aria-label="Email">
+                                <div class="gmail-icon"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="greeting">Hola, mi nombre es</h3>
+                    <h1 class="name">Sergio Sosa Aparicio</h1>
+                    <p class="description">
+                        Estoy formándome como desarrollador web. Me motiva aprender y ver cómo el esfuerzo se convierte
+                        en resultados. Mi objetivo es claro: convertirme en un buen programador y disfrutar cada día de
+                        lo que hago.
+                    </p>
+                    <a href="mailto:sosaapariciosergio@gmail.com" class="email">sosaapariciosergio@gmail.com</a>
+                    <a href="Files/CV Sergio Sosa.pdf" download='CV_Sergio_Sosa' class='download-cv'>DESCARGAR
+                        CURRICULUM</a>
+                </div>
+                <div class="profile-down">
+                    <figure class="profile-photo" role="img" aria-label="Foto de Sergio Sosa"></figure>
+                    <div class="icon-container">
+                        <a href="https://github.com/SergioSosaAparicio" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub">
+                            <div class="github-icon"></div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sergio-sosa-aparicio-741583238/" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn">
+                            <div class="linkedin-icon"></div>
+                        </a>
+                        <a href="mailto:sosaapariciosergio@gmail.com" aria-label="Email">
+                            <div class="gmail-icon"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!----------- Tecnologías ----------->
+
+        <section class="containers" id="tech">
+            <img src="Files/html5.svg" class="tech-image" alt="HTML" />
+            <img src="Files/css.svg" class="tech-image" alt="CSS" />
+            <img src="Files/java.svg" class="tech-image" alt="Java" />
+            <img src="Files/mysql.svg" class="tech-image" alt="MySQL" />
+            <img src="Files/javascript.svg" class="tech-image" alt="JavaScript" />
+            <img src="Files/php.svg" class="tech-image" alt="PhP" />
+        </section>
+
+        <!----------- Proyectos ----------->
+
+        <section class="containers" id="projects">
+            <article class="project project-one">
+                <div class="content">
+                    <h3>Proyecto Uno</h3>
+                    <p>Descripción</p>
+                </div>
+            </article>
+            <article class="project project-two">
+                <div class="content">
+                    <h3>Proyecto Dos</h3>
+                    <p>Descripción</p>
+                </div>
+            </article>
+            <article class="project project-three">
+                <div class="content">
+                    <h3>Proyecto Tres</h3>
+                    <p>Descripción</p>
+                </div>
+            </article>
+            <article class="project project-four">
+                <div class="content">
+                    <h3>Proyecto Cuatro</h3>
+                    <p>Descripción</p>
+                </div>
+            </article>
+            <article class="project project-five">
+                <div class="content">
+                    <h3>Proyecto Cinco</h3>
+                    <p>Descripción</p>
+                </div>
+            </article>
+            <article class="project project-six">
+                <div class="content">
+                    <h3>Proyecto Seis</h3>
+                    <p>Descripción</p>
+                </div>
+            </article>
+        </section>
+    </main>
+    </main>
+    <!----------- Contacto ----------->
+
+    <footer>
+        <section class="contact-section" id="contact">
+            <div class="contact-text">
+                <h2>Sergio Sosa Aparicio</h2>
+                <a href="mailto:sosaapariciosergio@gmail.com" class="email">sosaapariciosergio@gmail.com</a>
+                <a href='tel:654752752' class='phone'>654 752 752</a>
+            </div>
+            <div class="contact-icons">
+                <a href="https://github.com/SergioSosaAparicio" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub">
+                    <div class="github-icon-contact"></div>
+                </a>
+                <a href="https://www.linkedin.com/in/sergio-sosa-aparicio-741583238/" target="_blank"
+                    rel="noopener noreferrer" aria-label="LinkedIn">
+                    <div class="linkedin-icon-contact"></div>
+                </a>
+                <a href="mailto:sosaapariciosergio@gmail.com" aria-label="Email">
+                    <div class="gmail-icon-contact"></div>
+                </a>
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>

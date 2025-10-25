@@ -1,0 +1,303 @@
+@media (max-width: 1920px) {
+    .containers {
+        padding: 70px;
+        margin: 200px 100px;
+    }
+
+    #tech {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 80px;
+        justify-items: center;
+    }
+
+    #projects {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .profile-up {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .containers {
+        margin: 100px 60px;
+        padding: 60px;
+    }
+
+    #projects {
+        margin-bottom: 100px;
+    }
+
+    .about-profile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .about-info {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        animation: slideInLeft 0.8s ease-out forwards;
+    }
+
+    .greeting {
+        margin-top: 0px;
+        font-size: 32px;
+    }
+
+    .name {
+        margin-bottom: 0px;
+        font-size: 50px;
+    }
+
+    .description {
+        margin-bottom: 30px;
+        margin-top: 30px;
+        font-size: 16px;
+        width: 90%;
+    }
+
+    .download-cv {
+        margin-bottom: 20px;
+    }
+
+    .profile-photo {
+        margin-top: 20px;
+        margin-bottom: 0px;
+        width: 250px;
+        border-radius: 50%;
+    }
+
+    .icon-container {
+        margin: 30px 0;
+        gap: 30px;
+    }
+
+    .tech-image {
+        width: 120px;
+    }
+
+    #projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project {
+        width: 220px;
+        height: 220px;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .profile-down {
+        display: none;
+    }
+
+    .profile-up {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer h2 {
+        margin-top: 0px;
+    }
+
+    .contact-section{
+        padding: 70px 0px;
+    }
+
+   
+}
+
+@media (max-width: 992px) {
+
+    .containers {
+        margin: 60px 40px;
+        padding: 50px;
+    }
+
+    .greeting {
+        font-size: 28px;
+    }
+
+    .name {
+        font-size: 42px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .profile-photo {
+        width: 220px;
+    }
+
+    #tech {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .tech-image {
+        width: 100px;
+    }
+
+    #projects {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .project {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 47px;
+        right: 0;
+        width: 200px;
+        background-color: #000000d9;
+        padding: 25px;
+        border-radius: 0 0 0 12px;
+        z-index: 999;
+        gap: 15px;
+    }
+
+    .main-nav.open .nav-list {
+        display: flex;
+    }
+
+    .containers {
+        margin: 60px 30px;
+        padding: 40px;
+    }
+
+    .greeting {
+        font-size: 26px;
+    }
+
+    .name {
+        font-size: 38px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .profile-photo {
+        margin-bottom: 0px;
+        width: 200px;
+    }
+
+    #tech {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    .tech-image {
+        width: 90px;
+    }
+
+    #projects {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .project {
+        width: 150px;
+        height: 150px;
+    }
+
+}
+
+@media (max-width: 560px) {
+
+    .containers {
+        margin: 40px 20px;
+        padding: 35px;
+    }
+
+    .greeting {
+        margin-top: 0px;
+        font-size: 22px;
+    }
+
+    .name {
+        font-size: 32px;
+    }
+
+    .description {
+        font-size: 13px;
+    }
+
+    .icon-container {
+        gap: 20px;
+    }
+
+    #tech {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .tech-image {
+        width: 80px;
+    }
+
+    #projects {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .project {
+        width: 120px;
+        height: 120px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .containers {
+        padding: 30px 20px;
+        margin: 20px;
+    }
+
+    .name {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .tech-image {
+        width: 70px;
+    }
+
+    .project {
+        width: 100px;
+        height: 100px;
+    }
+}
